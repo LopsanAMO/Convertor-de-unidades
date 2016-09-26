@@ -94,43 +94,36 @@ class ViewController: UIViewController {
         
         if segmentedControl.selectedSegmentIndex == 0 {
             if converterControl.selectedSegmentIndex == 0 {
-                
+                resultLabel.text = "\(initValue) millas = \(endValue) millas"
             }
             else if converterControl.selectedSegmentIndex == 1 {
-                
+                resultLabel.text = "\(initValue) millas = \(endValue) km"
             }
             else if converterControl.selectedSegmentIndex == 2 {
-                
+                resultLabel.text = "\(initValue) millas =  \(endValue) yardas"
             }
         }
         else if segmentedControl.selectedSegmentIndex == 1 {
             if converterControl.selectedSegmentIndex == 0 {
-                
+                resultLabel.text = "\(initValue) km = \(endValue) millas"
             }
             else if converterControl.selectedSegmentIndex == 1 {
-                
+                resultLabel.text = "\(initValue) km = \(endValue) km"
             }
             else if converterControl.selectedSegmentIndex == 2 {
-                
+                resultLabel.text = "\(initValue) km = \(endValue) yardas"
             }
         }
         else if segmentedControl.selectedSegmentIndex == 2 {
             if converterControl.selectedSegmentIndex == 0 {
-                
+                resultLabel.text = "\(initValue) yardas = \(endValue) millas"
             }
             else if converterControl.selectedSegmentIndex == 1 {
-                
+                resultLabel.text = "\(initValue) yardas = \(endValue) km"
             }
             else if converterControl.selectedSegmentIndex == 2 {
-                
+                resultLabel.text = "\(initValue) yardas = \(endValue) yardas"
             }
-        }
-        
-        if segmentedControl.selectedSegmentIndex == 0 {
-            resultLabel.text = "\(initValue) km = \(endValue) millas"
-        }
-        else {
-            resultLabel.text = "\(initValue) millas = \(endValue) km"
         }
     }
     
