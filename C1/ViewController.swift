@@ -44,20 +44,41 @@ class ViewController: UIViewController {
         
         let selectedConverter = converterControl.selectedSegmentIndex
         
-        
         if selectedIndex == 0 {
-            let converterValue = textFieldVal * mileUnit
-            reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
+            if selectedConverter == 0 {
+                let converterValue = textFieldVal * 1
+                reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
+            }
+            else if selectedConverter == 1 {
+                let converterValue = textFieldVal * mileUnit
+                reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
+            }
+            else if selectedConverter == 2 {
+                let converterValue = textFieldVal * yardUnit
+                reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
+            }
         }
         else if selectedIndex == 1{
-            let converterValue = textFieldVal
+            if selectedConverter == 0 {
+                
+            }
+            else if selectedConverter == 1 {
+                
+            }
+            else if selectedConverter == 2 {
+                
+            }
         }
         else if selectedIndex == 2 {
-            
-        }
-        else {
-            let converterValue = textFieldVal * mileUnit
-            reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
+            if selectedConverter == 0 {
+                
+            }
+            else if selectedConverter == 1 {
+                
+            }
+            else if selectedConverter == 2 {
+                
+            }
         }
     }
     
