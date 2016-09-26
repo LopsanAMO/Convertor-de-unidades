@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conversor de Distancias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oc-EV-c9c">
@@ -24,9 +24,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mX7-Kk-x16">
-                                <frame key="frameInset" minX="16" minY="148" width="343" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mX7-Kk-x16">
                                 <segments>
                                     <segment title="Millas"/>
                                     <segment title="Kilometros"/>
@@ -34,16 +32,12 @@
                                 </segments>
                                 <color key="tintColor" red="0.9261732157" green="0.71352643029999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resultado:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfw-s3-SfU">
-                                <frame key="frameInset" minX="23" minY="292" width="329" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfw-s3-SfU">
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbt-EU-x7l">
-                                <frame key="frameInset" minX="16" minY="407" width="343" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbt-EU-x7l">
                                 <color key="backgroundColor" red="0.9261732157" green="0.71352643029999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
@@ -52,9 +46,7 @@
                                     <action selector="convertPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fJD-7C-iMf"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qcs-la-pJ5">
-                                <frame key="frameInset" minX="16" minY="226" width="343" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qcs-la-pJ5">
                                 <segments>
                                     <segment title="Millas"/>
                                     <segment title="Kilometros"/>
@@ -69,9 +61,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fv3-Mf-mTW">
-                                <frame key="frameInset" minX="178" minY="197" width="19" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fv3-Mf-mTW">
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -87,11 +77,38 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="kbt-EU-x7l" firstAttribute="top" secondItem="dfw-s3-SfU" secondAttribute="bottom" constant="15" id="4zX-Ti-Y1T">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                            </constraint>
                             <constraint firstItem="6oc-EV-c9c" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="5hx-TT-WSf"/>
+                            <constraint firstItem="kbt-EU-x7l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="94S-qN-NDe"/>
+                            <constraint firstItem="fv3-Mf-mTW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Xf-RZ-AHA"/>
+                            <constraint firstItem="dfw-s3-SfU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="9h8-Ua-qFt"/>
+                            <constraint firstItem="dfw-s3-SfU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eni-iY-NKj"/>
+                            <constraint firstItem="kbt-EU-x7l" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="KAY-ul-MSz"/>
+                            <constraint firstItem="mX7-Kk-x16" firstAttribute="top" secondItem="nLt-l8-1Pv" secondAttribute="bottom" constant="40" id="KGw-RE-TvB">
+                                <variation key="heightClass=compact-widthClass=compact" constant="25"/>
+                            </constraint>
                             <constraint firstItem="nLt-l8-1Pv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pw6-XN-Hem"/>
-                            <constraint firstItem="nLt-l8-1Pv" firstAttribute="top" secondItem="6oc-EV-c9c" secondAttribute="bottom" constant="25" id="fai-6C-AHU"/>
+                            <constraint firstItem="mX7-Kk-x16" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="WSL-BL-8De"/>
+                            <constraint firstItem="dfw-s3-SfU" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="XC7-dh-2UX"/>
+                            <constraint firstItem="qcs-la-pJ5" firstAttribute="top" secondItem="fv3-Mf-mTW" secondAttribute="bottom" constant="15" id="XgG-l3-pzY">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="dfw-s3-SfU" firstAttribute="top" secondItem="qcs-la-pJ5" secondAttribute="bottom" constant="15" id="bwz-Xq-Zhi">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="nLt-l8-1Pv" firstAttribute="top" secondItem="6oc-EV-c9c" secondAttribute="bottom" constant="25" id="fai-6C-AHU">
+                                <variation key="heightClass=compact-widthClass=compact" constant="15"/>
+                            </constraint>
+                            <constraint firstItem="qcs-la-pJ5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="kEl-V0-uLb"/>
+                            <constraint firstItem="mX7-Kk-x16" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lqS-Rj-trN"/>
+                            <constraint firstItem="fv3-Mf-mTW" firstAttribute="top" secondItem="mX7-Kk-x16" secondAttribute="bottom" constant="15" id="mTp-fq-BNE">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="qcs-la-pJ5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="og8-De-2be"/>
                             <constraint firstItem="6oc-EV-c9c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p50-TA-BT4"/>
-                            <constraint firstItem="nLt-l8-1Pv" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="pjO-se-pVd"/>
+                            <constraint firstItem="nLt-l8-1Pv" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="pjO-se-pVd"/>
                             <constraint firstItem="6oc-EV-c9c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="tmi-7g-TmZ"/>
                         </constraints>
                     </view>
