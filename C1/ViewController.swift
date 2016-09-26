@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     let mileUnit : Double = 1.60934
     let yardUnit : Double = 0.0009144
-    
+    let yardToMileUnit : Double = 0.000568182
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -54,30 +54,36 @@ class ViewController: UIViewController {
                 reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
             }
             else if selectedConverter == 2 {
-                let converterValue = textFieldVal * yardUnit
+                let converterValue = textFieldVal / yardToMileUnit
                 reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
             }
         }
         else if selectedIndex == 1{
             if selectedConverter == 0 {
-                
+                let converterValue = textFieldVal / mileUnit
+                reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
             }
             else if selectedConverter == 1 {
-                
+                let converterValue = textFieldVal * 1
+                reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
             }
             else if selectedConverter == 2 {
-                
+                let converterValue = textFieldVal / yardUnit
+                reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
             }
         }
         else if selectedIndex == 2 {
             if selectedConverter == 0 {
-                
+                let converterValue = textFieldVal * yardToMileUnit
+                reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
             }
             else if selectedConverter == 1 {
-                
+                let converterValue = textFieldVal * yardUnit
+                reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
             }
             else if selectedConverter == 2 {
-                
+                let converterValue = textFieldVal * 1
+                reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
             }
         }
     }
@@ -85,6 +91,40 @@ class ViewController: UIViewController {
     func reloadView(textFieldVal : Double, converterValue : Double) {
         let initValue = String(format: "%.2f", textFieldVal)
         let endValue = String(format: "%.2f", converterValue)
+        
+        if segmentedControl.selectedSegmentIndex == 0 {
+            if converterControl.selectedSegmentIndex == 0 {
+                
+            }
+            else if converterControl.selectedSegmentIndex == 1 {
+                
+            }
+            else if converterControl.selectedSegmentIndex == 2 {
+                
+            }
+        }
+        else if segmentedControl.selectedSegmentIndex == 1 {
+            if converterControl.selectedSegmentIndex == 0 {
+                
+            }
+            else if converterControl.selectedSegmentIndex == 1 {
+                
+            }
+            else if converterControl.selectedSegmentIndex == 2 {
+                
+            }
+        }
+        else if segmentedControl.selectedSegmentIndex == 2 {
+            if converterControl.selectedSegmentIndex == 0 {
+                
+            }
+            else if converterControl.selectedSegmentIndex == 1 {
+                
+            }
+            else if converterControl.selectedSegmentIndex == 2 {
+                
+            }
+        }
         
         if segmentedControl.selectedSegmentIndex == 0 {
             resultLabel.text = "\(initValue) km = \(endValue) millas"
