@@ -18,7 +18,10 @@ class ViewController: UIViewController {
     
     @IBOutlet var resultLabel: UILabel!
     
-    let mileUnit : Double = 1.609
+    @IBOutlet var converterControl: UISegmentedControl!
+    
+    let mileUnit : Double = 1.60934
+    let yardUnit : Double = 0.0009144
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,9 +42,18 @@ class ViewController: UIViewController {
         
         let textFieldVal = Double(distanceTextField.text!)!
         
+        let selectedConverter = converterControl.selectedSegmentIndex
+        
+        
         if selectedIndex == 0 {
-            let converterValue = textFieldVal / mileUnit
+            let converterValue = textFieldVal * mileUnit
             reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
+        }
+        else if selectedIndex == 1{
+            let converterValue = textFieldVal
+        }
+        else if selectedIndex == 2 {
+            
         }
         else {
             let converterValue = textFieldVal * mileUnit
@@ -57,7 +69,7 @@ class ViewController: UIViewController {
             resultLabel.text = "\(initValue) km = \(endValue) millas"
         }
         else {
-            resultLabel.text = "\(initValue) millas = \(endValue) km "
+            resultLabel.text = "\(initValue) millas = \(endValue) km"
         }
     }
     
