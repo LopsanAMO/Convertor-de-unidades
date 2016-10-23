@@ -40,51 +40,56 @@ class ViewController: UIViewController {
         
         let selectedIndex = segmentedControl.selectedSegmentIndex
         
-        let textFieldVal = Double(distanceTextField.text!)!
+        if let textFieldStr = distanceTextField.text, let textFieldVal = Double(textFieldStr) {
         
-        let selectedConverter = converterControl.selectedSegmentIndex
         
-        if selectedIndex == 0 {
-            if selectedConverter == 0 {
-                let converterValue = textFieldVal * 1
-                reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
+            let selectedConverter = converterControl.selectedSegmentIndex
+        
+            if selectedIndex == 0 {
+                if selectedConverter == 0 {
+                    let converterValue = textFieldVal * 1
+                    reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
+                }
+                else if selectedConverter == 1 {
+                    let converterValue = textFieldVal * mileUnit
+                    reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
+                }
+                else if selectedConverter == 2 {
+                    let converterValue = textFieldVal / yardToMileUnit
+                    reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
+                }
             }
-            else if selectedConverter == 1 {
-                let converterValue = textFieldVal * mileUnit
-                reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
+            else if selectedIndex == 1{
+                if selectedConverter == 0 {
+                    let converterValue = textFieldVal / mileUnit
+                    reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
+                }
+                else if selectedConverter == 1 {
+                    let converterValue = textFieldVal * 1
+                    reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
+                }
+                else if selectedConverter == 2 {
+                    let converterValue = textFieldVal / yardUnit
+                    reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
+                }
             }
-            else if selectedConverter == 2 {
-                let converterValue = textFieldVal / yardToMileUnit
-                reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
+            else if selectedIndex == 2 {
+                if selectedConverter == 0 {
+                    let converterValue = textFieldVal * yardToMileUnit
+                    reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
+                }
+                else if selectedConverter == 1 {
+                    let converterValue = textFieldVal * yardUnit
+                    reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
+                }
+                else if selectedConverter == 2 {
+                    let converterValue = textFieldVal * 1
+                    reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
+                }
             }
         }
-        else if selectedIndex == 1{
-            if selectedConverter == 0 {
-                let converterValue = textFieldVal / mileUnit
-                reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
-            }
-            else if selectedConverter == 1 {
-                let converterValue = textFieldVal * 1
-                reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
-            }
-            else if selectedConverter == 2 {
-                let converterValue = textFieldVal / yardUnit
-                reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
-            }
-        }
-        else if selectedIndex == 2 {
-            if selectedConverter == 0 {
-                let converterValue = textFieldVal * yardToMileUnit
-                reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
-            }
-            else if selectedConverter == 1 {
-                let converterValue = textFieldVal * yardUnit
-                reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
-            }
-            else if selectedConverter == 2 {
-                let converterValue = textFieldVal * 1
-                reloadView(textFieldVal: textFieldVal, converterValue: converterValue)
-            }
+        else{
+            resultLabel.text = "Escribe algun valor"
         }
     }
     
